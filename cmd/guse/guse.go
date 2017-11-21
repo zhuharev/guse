@@ -8,6 +8,7 @@ import (
 	"os"
 
 	"github.com/urfave/cli"
+	"github.com/zhuharev/guse/boilerplate"
 	"github.com/zhuharev/guse/skeleton"
 )
 
@@ -15,6 +16,7 @@ func main() {
 	app := &cli.App{
 		Commands: []cli.Command{
 			skeleton.Cmd,
+			boilerplate.Cmd,
 		},
 	}
 	app.Run(os.Args)
